@@ -7,6 +7,10 @@ import { BarChart } from "@mui/x-charts";
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    document.title = "Weekly Load Planner";
+  }, []);  // The empty array makes sure this effect runs only once after the initial render
+
   const [activities, setActivities] = useState(() => {
     // Load activities from cookies at initialization
     const savedActivities = Cookies.get('activities');
