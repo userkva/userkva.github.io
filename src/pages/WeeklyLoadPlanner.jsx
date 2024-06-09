@@ -4,13 +4,9 @@ import InfoIcon from '@material-ui/icons/Info';
 import Tooltip from '@material-ui/core/Tooltip';
 import Cookies from 'js-cookie';
 import { BarChart } from "@mui/x-charts";
-import './App.css';
+import '../App.css';
 
-function App() {
-  useEffect(() => {
-    document.title = "Weekly Load Planner";
-  }, []);  // The empty array makes sure this effect runs only once after the initial render
-
+function WeeklyLoadPlanner() {
   const [activities, setActivities] = useState(() => {
     // Load activities from cookies at initialization
     const savedActivities = Cookies.get('activities');
@@ -218,4 +214,4 @@ function App() {
   );
 }
 
-export default App;
+export default WeeklyLoadPlanner;
