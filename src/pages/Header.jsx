@@ -11,7 +11,7 @@ function Header() {
         </Typography>
         <Button color="inherit" component={Link} to="/">Main Page</Button>
         <Button color="inherit" component={Link} to="/planner">Weekly Load Planner</Button>
-        <Button color="inherit" component={Link} to="/new-instrument">New Instrument</Button>
+        <Button color="inherit" component={Link} to="/сharacter-editor">Character Editor</Button>
       </Toolbar>
     </AppBar>
   );

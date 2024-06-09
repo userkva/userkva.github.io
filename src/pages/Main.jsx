@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './Header';
 import WeeklyLoadPlanner from './WeeklyLoadPlanner';
-import NewInstrument from './NewInstrument';
+import CharacterEditor from './CharacterEditor';
 import { Container, Typography, Box, Button } from '@material-ui/core';
 
 function MainPage() {
@@ -25,7 +25,7 @@ function MainPage() {
         </li>
         <li>
           <Typography variant="body1">
-            <Link to="/new-instrument">New Instrument</Link>
+            <Link to="/сharacter-editor">Character Editor</Link> - A narrative tool to create and customize your own character.
           </Typography>
         </li>
       </ul>
@@ -40,7 +40,7 @@ function Main() {
       <Routes>
       <Route path="/" element={<MainPage />} />
         <Route path="/planner" element={<WeeklyLoadPlanner />} />
-        <Route path="/new-instrument" element={<NewInstrument />} />
+        <Route path="/сharacter-editor" element={<CharacterEditor />} />
       </Routes>
     </Router>
   );
